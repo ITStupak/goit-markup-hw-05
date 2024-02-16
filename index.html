@@ -546,5 +546,60 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <a href="#"
+          ><img
+            class="form-close"
+            src="./images/exported/form_svg/close.svg"
+            alt="Close"
+            width="24px"
+            height="24px"
+        /></a>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form action="" class="modal-form">
+          <label for="username" class="modal-form-label">Name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            required
+            class="modal-form-input"
+          />
+
+          <label for="tel" class="modal-form-label">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="tel"
+            required
+            class="modal-form-input"
+          />
+
+          <label for="email" class="modal-form-label">Email</label>
+          <input type="email" id="email" required class="modal-form-input" />
+
+          <label for="comment" class="modal-form-label">Comment</label>
+          <textarea
+            name="comment"
+            rows="5"
+            placeholder="Text input"
+            id="comment"
+            class="modal-form-input comment"
+          ></textarea>
+        </form>
+
+        <form action="" class="modal-privacy">
+          <input type="checkbox" value="agree" />
+          <p class="modal-privacy-text">
+            I accept the terms and conditions of the
+            <a href="#"
+              ><span class="modal-privacy-accent">Privacy Policy</span></a
+            >
+          </p>
+        </form>
+        <button type="button" class="modal-btn">Send</button>
+      </div>
+    </div>
   </body>
 </html>
