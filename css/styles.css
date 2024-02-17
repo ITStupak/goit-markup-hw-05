@@ -129,6 +129,9 @@ img {
   background-size: cover;
   padding: 188px 0;
 }
+.section.about {
+  position: relative;
+}
 .about-title {
   text-align: center;
   color: #fff;
@@ -322,7 +325,6 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  margin-bottom: 50px;
 }
 .footer .container {
   display: flex;
@@ -352,21 +354,41 @@ img {
   display: flex;
   gap: 16px;
 }
-.test {
-  height: 100px;
+.modal-background {
+  width: 1440px;
+  height: 672px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2e2f4266;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
-.modal {
+.modal-background:target {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.modal-window {
+  width: 100%;
+  max-width: 408px;
   margin: 0 auto;
   padding: 24px;
   border-radius: 4px;
-  width: 408px;
-  height: 584px;
   box-shadow: 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001f,
     0 2px 1px 0 #00000033;
   background: #fcfcfc;
-  position: relative;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 8px;
+  left: 0;
 }
-.form-close {
+.icon-close {
   position: absolute;
   right: 24px;
   top: 24px;
@@ -378,10 +400,11 @@ img {
   color: #2e2f42;
   margin-bottom: 16px;
 }
-.modal-form {
+.modal-form,
+.input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  position: relative;
 }
 .modal-form-label {
   font-size: 12px;
@@ -396,12 +419,18 @@ img {
   max-width: 360px;
   height: 40px;
   margin-bottom: 8px;
+  padding-left: 38px;
+}
+.modal-icon {
+  position: absolute;
+  top: 32px;
+  left: 19px;
 }
 .comment {
   padding: 8px 16px;
   height: 120px;
   resize: none;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 .modal-form-input.comment::placeholder {
   font-size: 12px;
@@ -447,10 +476,4 @@ input[type="checkbox"] {
   text-align: center;
   color: #fff;
   cursor: pointer;
-}
-.backdrop {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
