@@ -4,7 +4,6 @@ body {
   letter-spacing: 0.32px;
   color: #434455;
   background-color: #fff;
-  width: 1440px;
 }
 h1,
 h2,
@@ -37,6 +36,7 @@ img {
 .nav-bar {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .menu {
   display: flex;
@@ -113,6 +113,7 @@ img {
 .section {
   padding: 120px 0;
   position: relative;
+  margin: 0 auto;
 }
 .container {
   width: 1158px;
@@ -136,7 +137,6 @@ img {
   text-align: center;
   color: #fff;
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 496px;
@@ -170,7 +170,6 @@ img {
 .section-title {
   color: #2e2f42;
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
