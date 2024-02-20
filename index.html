@@ -59,13 +59,9 @@
       <section class="section about">
         <div class="container">
           <h1 class="about-title">Effective Solutions for Your Business</h1>
-          <!-- кнопка НИЖЕ обернута в тег а - так делать категорически нельзя! переделать! -->
-          <a href="./index.html#order"
-            ><button type="button" class="about-btn" id="#order">
-              Order Service
-            </button></a
-          >
-          <!-- кнопка ВЫШЕ обернута в тег а - так делать категорически нельзя! переделать! -->
+          <button type="button" class="about-btn" id="#order">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="section">
@@ -145,7 +141,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -156,7 +152,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -167,7 +163,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -178,7 +174,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -204,7 +200,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -215,7 +211,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -226,7 +222,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -237,7 +233,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -263,7 +259,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -274,7 +270,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -285,7 +281,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -296,7 +292,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -322,7 +318,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -333,7 +329,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -344,7 +340,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -355,7 +351,7 @@
                       target="_blank"
                       class="team-link"
                     >
-                      <svg class="team-icon" width="16" height="16">
+                      <svg class="team-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -550,15 +546,31 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <div class="footer-subscribe-form">
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="footer-subscribe-email"
+            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg class="icon-send">
+                <use href="./images/modal_icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="modal-background" id="order">
+    <div class="modal-background is-hidden" id="order">
       <div class="modal-window">
-        <a href="./index.html"
-          ><svg class="icon-close" width="24" height="24">
-            <use href="./images/modal-icons.svg#icon-close"></use>
+        <button type="button" class="close-btn">
+          <svg class="icon-close">
+            <use href="./images/modal_icons.svg#icon-close"></use>
           </svg>
-        </a>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form action="#" class="modal-form">
           <div class="input">
@@ -568,10 +580,11 @@
               name="username"
               id="username"
               required
+              autofocus
               class="modal-form-input"
             />
             <svg class="modal-icon" width="12" height="12">
-              <use href="./images/modal-icons.svg#icon-user"></use>
+              <use href="./images/modal_icons.svg#icon-user"></use>
             </svg>
           </div>
           <div class="input">
@@ -584,14 +597,14 @@
               class="modal-form-input"
             />
             <svg class="modal-icon" width="13" height="13">
-              <use href="./images/modal-icons.svg#icon-tel"></use>
+              <use href="./images/modal_icons.svg#icon-phone"></use>
             </svg>
           </div>
           <div class="input">
             <label for="email" class="modal-form-label">Email</label>
             <input type="email" id="email" required class="modal-form-input" />
             <svg class="modal-icon" width="16" height="12">
-              <use href="./images/modal-icons.svg#icon-email"></use>
+              <use href="./images/modal_icons.svg#icon-email"></use>
             </svg>
           </div>
           <label for="comment" class="modal-form-label">Comment</label>
@@ -604,8 +617,8 @@
           ></textarea>
         </form>
         <div class="modal-privacy">
-          <input type="checkbox" value="agree" />
-          <label class="modal-privacy-text">
+          <input type="checkbox" value="agree" id="privacy" />
+          <label for="privacy" class="modal-privacy-text">
             I accept the terms and conditions of the
             <a href="#"
               ><span class="modal-privacy-accent">Privacy Policy</span>
